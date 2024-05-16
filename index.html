@@ -1,26 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PDF in HTML</title>
 </head>
+<style>
+    .pdf {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+    }
+
+    .pdf,
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1,
+    h3 {
+        text-align: center;
+    }
+
+    h1 {
+        color: green;
+    }
+</style>
+
 <body>
-    <h1>Read Stop Procrastinating book</h1>
+
+    <h1>GeeksforGeeks</h1>
+    <h3>Embedding the PDF file Using Object Tag</h3>
     <p>
         HTML DisplayYou cannot be sure how HTML will be displayed.
         Large or small screens, and resized windows will create different results.
         With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.
     </p>
-    <p>
-        I want to show you that it’s possible to overcome procrastination. No matter
-        where you are right now, no matter how hopeless you feel, no matter how
-        crazy your level of procrastination is, there is a way to get better at this.
-        There is a way to procrastinate less, get more things done, and feel in
-        control of your life.
-     </p>
-    <embed src="pdf/Stop_Procrastinating.pdf" width="1780px" height="1200px" />
-    <a href="https://babulisahoo.github.io/ReadPdfFile">Download the PDF</a>
-    <h1>End of the Book</h1>
+    <object class="pdf" 
+            data=
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf"
+            width="800"
+            height="500">
+    </object>
 </body>
+
 </html>
